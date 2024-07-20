@@ -1,0 +1,93 @@
+/* Genel stil ayarları */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    margin-top: 60px; /* Navbar yüksekliği kadar margin ekleniyor */
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+section.brands ul {
+    list-style: none;
+    padding: 0;
+}
+
+section.brands ul li {
+    font-size: 1.2em;
+}
+
+section.product-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-box {
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: calc(33.333% - 20px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-box h2 {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+}
+
+.product-box p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .product-box {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .product-box {
+        width: 100%;
+    }
+}
